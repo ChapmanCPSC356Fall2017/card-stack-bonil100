@@ -23,8 +23,7 @@
         android:src="@drawable/heart"
         android:id="@+id/imageView"
         android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+      />
 
     <ImageView
         android:layout_width="140dp"
@@ -44,7 +43,6 @@
         android:textColor="@android:color/holo_red_dark"
         android:textSize="50sp"
         android:rotation="180"
-        android:layout_gravity="bottom|right"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

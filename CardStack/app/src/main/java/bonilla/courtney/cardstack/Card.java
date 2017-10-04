@@ -12,12 +12,14 @@ import java.util.Stack;
 
 public class Card {
 
+
     public enum Rank { TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE}
 
     public enum Suit {HEARTS, CLUBS, SPADES, DIAMONDS}
 
     private final Rank rank;
     private final Suit suit;
+
     public Card(Rank rank, Suit suit)
     {
         this.rank =rank;

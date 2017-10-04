@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 //make a new stack
                 Stack<Card> cards = new Stack<>();
                 Collections.shuffle(cards);
-
                 //randomize the stack
 
                 //create 52 card objects from class Card
@@ -100,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
                 Card c50 = new Card(Card.Rank.JACK, Card.Suit.SPADES);
                 Card c51 = new Card(Card.Rank.QUEEN, Card.Suit.SPADES);
                 Card c52 = new Card(Card.Rank.KING, Card.Suit.SPADES);
-
+                c52.changeNum(Card.Rank.KING, text_up_left, text_low_right);
+                c52.changeSuit(Card.Suit.SPADES, suit_left, suit_center,suit_right);
 
                 //push all 52 cards on the stack
                 cards.push(c1);
