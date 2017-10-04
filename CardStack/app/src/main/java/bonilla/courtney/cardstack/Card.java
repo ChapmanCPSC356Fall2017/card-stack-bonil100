@@ -103,9 +103,9 @@ public class Card {
                 right.setImageResource(R.drawable.heart);
                 break;
             case CLUBS:
-                left.setImageResource(R.drawable.black_club_suit_u2663_icon_256x256);
-                center.setImageResource(R.drawable.black_club_suit_u2663_icon_256x256);
-                right.setImageResource(R.drawable.black_club_suit_u2663_icon_256x256);
+                left.setImageResource(R.drawable.clubs);
+                center.setImageResource(R.drawable.clubs);
+                right.setImageResource(R.drawable.clubs);
                 break;
             case SPADES:
                 left.setImageResource(R.drawable.spades);

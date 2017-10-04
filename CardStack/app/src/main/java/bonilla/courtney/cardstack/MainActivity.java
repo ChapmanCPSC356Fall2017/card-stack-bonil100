@@ -39,14 +39,18 @@ public class MainActivity extends AppCompatActivity {
                 Stack<Card> cards = new Stack<>();
                 Collections.shuffle(cards);
 
-
                 //randomize the stack
-
 
                 //create 52 card objects from class Card
                 Card c1 = new Card(Card.Rank.ACE, Card.Suit.HEARTS);
+                c1.changeNum(Card.Rank.ACE, text_up_left, text_low_right);
+                c1.changeSuit(Card.Suit.HEARTS, suit_left, suit_center,suit_right);
                 Card c2 = new Card(Card.Rank.TWO, Card.Suit.HEARTS);
+                c2.changeNum(Card.Rank.TWO, text_up_left, text_low_right);
+                c2.changeSuit(Card.Suit.HEARTS, suit_left, suit_center,suit_right);
                 Card c3 = new Card(Card.Rank.THREE, Card.Suit.HEARTS);
+                c3.changeNum(Card.Rank.THREE, text_up_left, text_low_right);
+                c3.changeSuit(Card.Suit.HEARTS, suit_left, suit_center,suit_right);
                 Card c4 = new Card(Card.Rank.FOUR, Card.Suit.HEARTS);
                 Card c5 = new Card(Card.Rank.FIVE, Card.Suit.HEARTS);
                 Card c6 = new Card(Card.Rank.SIX, Card.Suit.HEARTS);
@@ -154,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //pop the top card
 
-                Card topCard = cards.pop();
+                cards.pop();
 
 
             }
