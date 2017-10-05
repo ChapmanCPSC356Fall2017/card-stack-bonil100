@@ -1,5 +1,7 @@
 package bonilla.courtney.cardstack;
 
+import android.graphics.Color;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,13 +38,13 @@ public class Card {
     }
 
 
-    public void changeNum(Card.Rank rank, TextView t, TextView t2)
+    public void changeNum(TextView t, TextView t2)
     {
 
         switch (rank){
             case ACE:
-                t.setText("1");
-                t2.setText("1");
+                t.setText("A");
+                t2.setText("A");
                 break;
             case TWO:
                 t.setText("2");
@@ -95,29 +97,38 @@ public class Card {
 
 
         }
+
     }
-    public void changeSuit(Card.Suit suit, ImageView left, ImageView center, ImageView right) {
+   public void changeSuit(TextView t, TextView t2, ImageView left, ImageView center, ImageView right) {
 
         switch (suit) {
             case HEARTS:
                 left.setImageResource(R.drawable.heart);
                 center.setImageResource(R.drawable.heart);
                 right.setImageResource(R.drawable.heart);
+                t.setTextColor(Color.RED);
+                t2.setTextColor(Color.RED);
                 break;
             case CLUBS:
                 left.setImageResource(R.drawable.clubs);
                 center.setImageResource(R.drawable.clubs);
                 right.setImageResource(R.drawable.clubs);
+                t.setTextColor(Color.BLACK);
+                t2.setTextColor(Color.BLACK);
                 break;
             case SPADES:
                 left.setImageResource(R.drawable.spades);
                 center.setImageResource(R.drawable.spades);
                 right.setImageResource(R.drawable.spades);
+                t.setTextColor(Color.BLACK);
+                t2.setTextColor(Color.BLACK);
                 break;
             case DIAMONDS:
                 left.setImageResource(R.drawable.diamond);
                 center.setImageResource(R.drawable.diamond);
                 right.setImageResource(R.drawable.diamond);
+                t.setTextColor(Color.RED);
+                t2.setTextColor(Color.RED);
                 break;
         }
     }

@@ -7,13 +7,14 @@
     android:clickable="false">
 
 
+
     <TextView
         android:id="@+id/text_top_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:text="A"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/holo_red_light"
         android:textSize="50sp" />
 
     <ImageView
@@ -41,7 +42,7 @@
         android:layout_marginRight="15dp"
         android:rotation="180"
         android:text="A"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/holo_red_light"
         android:textSize="50sp" />
 
     <ImageView
